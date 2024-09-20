@@ -6,19 +6,26 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from './login/login.component';
+import { BusquedaComponent } from './busqueda/busqueda.component';
+import { ReactiveFormsModule } from '@angular/forms'; //Poder usar FormGroup
+import { HttpClientModule } from '@angular/common/http'; //Poder usar el servicio HttpClient al consumir APIs
+
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    BusquedaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
   ],
