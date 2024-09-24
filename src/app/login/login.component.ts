@@ -36,14 +36,15 @@ export class LoginComponent {
         usuario : this.loginForm.get('usuario')?.value,
         pass : this.loginForm.get('passwd')?.value
       }
-      this.serviceBusqueda.verOficinas(datosUs).subscribe(data => {
+      //Uso de API login para obtener oficinas
+      /*this.serviceBusqueda.verOficinas(datosUs).subscribe(data => {
         this.oficinas = data;
         console.log(this.oficinas);
-      })
+      })*/
       
     }
 
-    //Uso de API login para obtener oficinas
-    this.router.navigate(['/busqueda']); //Mueve a la página que indica el router
+    
+    this.router.navigate(['dashboard/busqueda']); //Mueve a la página que indica el router
   }
 }
