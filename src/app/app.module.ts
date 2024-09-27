@@ -11,11 +11,13 @@ import { LoginComponent } from './login/login.component';
 //Permiten el uso de <router-outlet>, además de que en cada module se almacenan las importaciones que necesita cada componente 
 import { MenuModule } from './menu/menu.module';
 import { BusquedaModule } from './busqueda/busqueda.module';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    ErrorPageComponent,
   ],
   imports: [
     BrowserModule,
