@@ -1,0 +1,27 @@
+.contiene404{
+    background-color: rgba(10, 35, 84, 0.7); /*Maniene opacidad sólo en el fondo*/
+    color: #FFF;
+    padding: 2em;
+    border-radius: 20px;
+}
+.mascota{
+    width: 50em;
+}
+
+.btnAmarillo{
+    background: #FFC900;
+    color: #0A2354;
+    border-radius: 10px;
+    border-color: #FFC900;
+    padding: 5px 10px;
+    width: auto; /*El largo del botón dependerá del texto*/
+    font-weight: bold;
+    position: absolute;
+    top: 43%; left: 63%;
+    transform: translate(-50%, -50%);
+}
+
+.btnAmarillo:hover{
+    background: #F05454;
+    border-color: #F05454;
+}
