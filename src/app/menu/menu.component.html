@@ -1,8 +1,18 @@
-<div class="example-container">
-    <mat-toolbar class="example-toolbar">
-      <img class="btnMenu" src="../../assets/logoFondo.png">
-    </mat-toolbar>
-</div>  
+<!-- Barra de navegación lateral -->
+<div id="sideNav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <a href="#">Inicio</a>
+  <a href="#">Buscar</a>
+  <a href="#">Registradores</a>
+  <a href="#">Salir</a>  
+</div>
 
-<!--Lugar en donde se mostrará el componente correspondiente, en este caso: busqueda-->
-<router-outlet></router-outlet>
+<!-- Icono del menú -->
+<span class="menu-icon" (click)="openNav()">
+  <img class="btnMenu" src="../../assets/logoFondo.png" alt="Menu Icon">
+</span>
+
+<!-- Contenido principal -->
+<div id="main">
+  <router-outlet></router-outlet>
+</div>
