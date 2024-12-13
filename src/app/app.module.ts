@@ -10,14 +10,19 @@ import { HttpClientModule } from '@angular/common/http'; //Poder usar el servici
 import { LoginComponent } from './login/login.component';
 //Permiten el uso de <router-outlet>, además de que en cada module se almacenan las importaciones que necesita cada componente 
 import { MenuModule } from './menu/menu.module';
-import { BusquedaModule } from './busqueda/busqueda.module';
+import { BusquedaModule } from './buscar/busqueda.module';
 import { ErrorPageComponent } from './error-page/error-page.component';
+import { ResultadosComponent } from './buscar/resultados/resultados.component';
+//Para hacer uso de la paginación con material
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     ErrorPageComponent,
+    ResultadosComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +32,9 @@ import { ErrorPageComponent } from './error-page/error-page.component';
     ReactiveFormsModule,
     HttpClientModule,
     MenuModule,
-    BusquedaModule
+    BusquedaModule,
+    MatPaginatorModule,
+    MatTableModule
   ],
   providers: [
   ],

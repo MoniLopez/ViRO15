@@ -5,20 +5,6 @@
     font-size: 2em;
 }
 
-.buscar{
-    background-color: rgba(10, 35, 84, 0.7); /*Maniene opacidad sólo en el fondo*/
-    border-radius: 3%;
-    align-items: center; /*Centra el contenido*/
-    color: #fff;
-    position: absolute;
-    padding: 1.5%;
-    /* Centrar el formulario en la página */
-    position: absolute;
-    top: 50%; /* Posición vertical */
-    left: 50%; /* Posición horizontal */
-    transform: translate(-50%, -50%); /* Centra el contenedor respecto a su propio tamaño */
-}
-
 .custom-input {
   height: 26px; /* Altura deseada para el input de texto */
   padding: 6px 12px; /* Ajusta el padding según tus necesidades */

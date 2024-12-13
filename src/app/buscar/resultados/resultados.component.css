@@ -1,0 +1,38 @@
+.blanca{
+    color: #FFF;
+    font-weight: bold;
+    font-size: 30rem;
+}
+
+.icono{
+    width: 15%;
+}
+
+.resultadosUbi{
+    position: absolute;
+    top: 50%; /* Posición vertical */
+    left: 50%; /* Posición horizontal */
+    transform: translate(-50%, -50%); /* Centra el contenedor respecto a su propio tamaño */
+}
+
+.resultadosColor{
+    background-color: rgba(10, 35, 84, 0.7); /*Maniene opacidad sólo en el fondo*/
+    border-radius: 3%;
+    align-items: center; /*Centra el contenido*/
+    color: #fff;
+    padding: 1.5%;
+}
+
+.btnGris{
+    background: #C7CBD3;
+    color: #0A2354;
+    border-radius: 10px;
+    border-color: #C7CBD3;
+    padding: 5px 10px;
+    width: auto; /*El largo del botón dependerá del texto*/
+    font-weight: bold;
+}
+
+.paginaResultados{
+    background: #F05854;
+}
