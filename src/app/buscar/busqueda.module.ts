@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BusquedaRoutingModule } from './busqueda-routing.module';
-import { BusquedaComponent } from './busqueda.component'; //Para que reconozca las importaciones hechas en este modulo (busqueda.module.ts)
+import { BusquedaComponent } from './busqueda/busqueda.component'; //Para que reconozca las importaciones hechas en este modulo (busqueda.module.ts)
+
+
 
 
 

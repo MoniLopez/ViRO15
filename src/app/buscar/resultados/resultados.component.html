@@ -1,0 +1,71 @@
+<div class="col">
+    <div class="container resultadosUbi">
+        <div class="row resultadosColor">
+            <div class="row">
+                <label class="letra">Datos a consultar:</label>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <label> Oficina: </label>
+                    </div>
+                    <div class="row">
+                        <label>Libro: </label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <label>Tipo: </label>
+                    </div>
+                    <div class="row">
+                        <label>Tomo: </label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <label>Partida: </label>
+                    </div>
+                    <div class="row">
+                        <label>Año: </label>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="../../../assets/buscarGris.png" class="icono">
+                </div>
+                <div class="col">
+                    <img src="../../../assets/editarGris.png" class="icono">
+                </div>
+            </div>
+        </div>
+    
+        <div class="row mt-5 resultadosColor">
+            <label>INSCRIPCIONES</label>
+            <table class="table aling-middle table-bordered text-center mt-3" style="color:#FFF;">
+                <thead>
+                    <tr>
+                        <th>Año</th>
+                        <th>Tomo</th>
+                        <th>Fasciculo</th>
+                        <th>Partida</th>
+                        <th>Archivo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AñoP </td>
+                        <td>TomoP </td>
+                        <td>FasciculoP </td>
+                        <td>PartidaP </td>
+                        <td>nommbreArchivoP </td>
+                        <td><button class="btnGris">Ver</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <mat-paginator class="paginacionResultados" [length]="100"
+                      [pageSize]="10"
+                      [pageSizeOptions]="[10, 15, 20]"
+                      (page)="paginacionApen($event)">
+        </mat-paginator>      
+        </div>
+    </div>
+</div>
