@@ -44,7 +44,6 @@ export class LoginComponent {
       
     }
 
-    
     this.router.navigate(['dashboard/busqueda']); //Mueve a la página que indica el router
   }
 }
